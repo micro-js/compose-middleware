@@ -2,7 +2,7 @@
   "name": "@f/compose-middleware",
   "description": "Compose redux middleware.",
   "repository": "git://github.com/micro-js/compose-middleware.git",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
