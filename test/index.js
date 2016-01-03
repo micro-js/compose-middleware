@@ -2,7 +2,7 @@
  * Imports
  */
 
-var composeReduxWare = require('..')
+var composeMiddleware = require('..')
 var test = require('tape')
 
 /**
@@ -55,7 +55,7 @@ test('should work recursively', t => {
 
 function compose (middleware) {
   var ctx = {dispatch: dispatch}
-  ctx.dispatch = composeReduxWare(middleware)(ctx)()
+  ctx.dispatch = composeMiddleware(middleware)(ctx)()
   return ctx.dispatch
 
   function dispatch (action) {
